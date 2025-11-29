@@ -1,0 +1,2 @@
+document.getElementById("pokeImg").src =
+    data.sprites.other["official-artwork"].front_default;

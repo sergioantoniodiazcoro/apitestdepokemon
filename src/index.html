@@ -1,13 +1,39 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Apitestdepokemon</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<!DOCTYPE html>
+<html lang="es">
+<head><body>
+  <app-root></app-root>
+</body>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Test Pokémon</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <app-root></app-root>
+
+    <h1 class="title">API Test Pokémon</h1>
+
+    <div class="pokedex">
+
+        <div class="search-box">
+            <input id="pokemonInput" type="text" placeholder="Nombre o ID del Pokémon...">
+            <button onclick="buscarPokemon()">Buscar</button>
+        </div>
+
+        <div class="card">
+            <img id="pokeImg" src="" alt="Pokémon">
+            <h2 id="pokeName">Nombre</h2>
+            <p id="pokeId">ID: -</p>
+            <p id="pokeTypes">Tipos: -</p>
+        </div>
+
+        <div class="buttons">
+            <button onclick="anterior()">◀ Anterior</button>
+            <button onclick="siguiente()">Siguiente ▶</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
